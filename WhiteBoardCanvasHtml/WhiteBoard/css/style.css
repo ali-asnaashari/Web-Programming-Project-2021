@@ -1,0 +1,107 @@
+
+body{
+    margin: 0;
+    padding: 30px;
+    background: #313131;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#convas{
+    box-shadow: -3px 2px 9px 6px black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.tools{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.tools .color-filed {
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid white;
+    align-self: center;
+    cursor: pointer;
+}
+
+.tools .button{
+    align-self: center;
+    width: 120px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: 300% 300%;
+    text-transform: uppercase;
+    border-radius: 30px;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btnClear{
+
+    background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #130336 100%);
+    transition: 0.5s;
+}
+
+#btnUndo{
+    background-image: linear-gradient(to right, #014c23 0%, #00d274 50%, #0f012a 100%);
+    transition: 0.5s;
+}
+
+.tools .button:hover {
+    background-position: right center;
+}
+
+
+.tools .color-picker{
+    align-self: center;
+    margin: 0 10px;
+    height: 50px;
+}
+
+.tools .pen-range{
+    align-self: center;
+    margin: 0 10px;
+}
+
+.SetDateTime{
+    font-family: 'Comic Sans MS',serif;
+    font-size: 12px;
+}
+
+.SetDateTime #SetDate{
+    float: left;
+    color: #d2d2d2;
+}
+
+.SetDateTime #SetTime{
+    float: right;
+    color:cadetblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

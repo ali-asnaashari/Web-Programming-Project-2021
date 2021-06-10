@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WhiteBoard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="filed">
+
+    <div class="SetDateTime">
+        <h2 id="SetTime"></h2>
+        <h2 id="SetDate"></h2>
+    </div>
+
+    <canvas id="convas"></canvas>
+
+    <div class="tools">
+        <button onClick="undoLast()"  type="button" class="button" id="btnUndo" >Undo</button>
+
+        <div onClick="changeColor(this)" class="color-filed" style="background: red;"></div>
+        <div onClick="changeColor(this)" class="color-filed" style="background: blue;"></div>
+        <div onClick="changeColor(this)" class="color-filed" style="background: green;"></div>
+        <div onClick="changeColor(this)" class="color-filed" style="background: yellow;"></div>
+
+        <input oninput="drawColor = this.value" type="color" class="color-picker">
+        <input oninput="drawWidth = this.value" type="range" class="pen-range" min="1" max="100" >
+
+        <button onClick="clearCanvas()" type="button" class="button" id="btnClear">Clear</button>
+    </div>
+</div>
+
+
+
+<script type = "text/JavaScript" src="js/WBScript.js"></script>
+</body>
+</html>
