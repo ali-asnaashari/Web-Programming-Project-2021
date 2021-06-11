@@ -1,6 +1,5 @@
 const express = require('express');
 
-
 /** App setup */
 const app = express();
 
@@ -29,7 +28,15 @@ io.on('connection',(socket) => {
       io.sockets.emit('chat',data);
    });
 
+   socket.on('typing',(data) => {
+      /** broadcast message
+       * emit to every other single client but not transmitter
+       */
+      socket.broadcast.emit('typing',data);
+   });
+
 });
+
 
 
 
