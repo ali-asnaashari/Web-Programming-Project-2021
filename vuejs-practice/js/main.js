@@ -9,7 +9,12 @@ Vue.createApp({
             arr : ['one','two'],
             fun:() => {
                 return 'hello'
-            }
+            },
+            src : 'https://picsum.photos/200/300',
+            alt : 'photo',
+            href : 'https://google.com',
+            text : 'ali',
+            html : '<strong>hello</strong>'
         }
     },
     methods: {

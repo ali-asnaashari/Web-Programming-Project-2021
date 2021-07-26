@@ -7,9 +7,22 @@
 <body>
 
     <div id="app">
-        {{ welcome() }}
-        <br>
-        {{ bye() }}
+
+<!--        {{ welcome() }}-->
+<!--        <br>-->
+<!--        {{ bye() }}-->
+
+        <img v-bind:src="src" v-bind:alt="alt">
+        <hr>
+        <a :href="href">Google</a>
+        <hr>
+        <span v-text="text"></span>
+<!--        same as-->
+        <hr>
+        <span>{{text}}</span>
+        <hr>
+        <span v-html="html"></span>
+
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
