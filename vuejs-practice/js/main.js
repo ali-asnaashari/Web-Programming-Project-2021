@@ -11,5 +11,14 @@ Vue.createApp({
                 return 'hello'
             }
         }
+    },
+    methods: {
+        welcome(){
+            return this.title
+        },
+        bye(){
+            let title = 'bye';
+            return title;
+        }
     }
 }).mount('#app');
